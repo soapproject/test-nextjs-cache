@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Cache Mechanism Testing
 
-## Getting Started
+This project is designed to test various caching mechanisms in Next.js, utilizing both `fetch` and `axios` for API requests. The primary focus is to observe and understand how different caching strategies affect data fetching in a Next.js application.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Run any mock API server you prefer, for example: [mockoon](https://mockoon.com/).  
+Configure your API endpoint in the .env file under TEST_API.
+
+Example .env file:
+
+```script
+TEST_API=http://127.0.0.1:4000/foobar
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+After the mock API is running, you can run:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```script
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+to test the behavior.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+The core functionality is implemented in the following locations:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `app/action`: Tests api calls use `server action`.
+- `app/api/*`: Tests api calls use `fetch` or `axios`.
+- `lib`: Reads the api URI from `.env`.
