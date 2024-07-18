@@ -2,10 +2,9 @@
 
 This project is designed to test various caching mechanisms in Next.js, utilizing both `fetch` and `axios` for API requests. The primary focus is to observe and understand how different caching strategies affect data fetching in a Next.js application.
 
-![image](https://github.com/user-attachments/assets/b1a0e93c-f6d3-4181-9d76-1624fae74eed)
+![image](https://github.com/user-attachments/assets/a390a602-a961-4fcc-ad2e-7da4af72a77f)
 
-![Peek 2024-07-18 18-20](https://github.com/user-attachments/assets/8cdf8bbb-554e-4143-8630-0abb290e0128)
-
+![Peek 2024-07-18 20-02](https://github.com/user-attachments/assets/931cec8b-b90b-4a75-afc7-74bd0c00f375)
 
 ## Setup
 
