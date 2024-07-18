@@ -34,3 +34,8 @@ The core functionality is implemented in the following locations:
 - `app/action`: Tests api calls use `server action`.
 - `app/api/*`: Tests api calls use `fetch` or `axios`.
 - `lib`: Reads the api URI from `.env`.
+
+## Nextjs Doc Ref
+https://nextjs.org/docs/app/building-your-application/caching  
+https://vercel.com/blog/common-mistakes-with-the-next-js-app-router-and-how-to-fix-them#static-or-dynamic-route-handlers  
+https://nextjs.org/docs/app/building-your-application/routing/route-handlers#caching
